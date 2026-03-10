@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: rgb(202, 233, 142);
+}
+
+/* Estilização por Tags */
+
+ul{
+    background-color: aqua;
+    list-style: nome;
+}
+li{
+
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h2{
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Estilização de ID */
+#Caixa-Rosa{
+    background-color: rgb(96, 177, 21);
+    padding:100px;
+    margin: 20px;
+
+}
+#Caixa-Roxa{
+    background-color: rgb(103, 18, 182);
+
+}
+/*Estilizaç;ao da CLASS */
+.caxinha{
+    background-color: white;
+    color: blue;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    margin: 50px 40px 30px 20px;
+}

@@ -1,0 +1,83 @@
+/* define fonte e fundo da página */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* centraliza o formulário */
+form{
+    width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* título */
+h1{
+    text-align: center;
+}
+
+/* grupos do formulário */
+fieldset{
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* título dos grupos */
+legend{
+    font-weight: bold;
+}
+
+/* labels */
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+/* inputs e select */
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* botões */
+input[type="submit"],
+input[type="reset"]{
+    width: 48%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* botão enviar */
+input[type="submit"]{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* botão limpar */
+input[type="reset"]{
+    background-color: #f44336;
+    color: white;
+}
+
+/* efeito quando passa o mouse */
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover{
+    background-color: #d7372d;
+}

@@ -1,0 +1,57 @@
+/* Reset básico */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.bloco {
+  margin-bottom: 30px;
+}
+
+/* 1. Caixa vazia */
+.caixa-vazia:empty {
+  width: 200px;
+  height: 60px;
+  background-color: #fef2f2;
+  border: 2px solid red;
+}
+
+/* 2. Pseudo-elementos nos títulos */
+h2::before {
+  content: "⭐ ";
+  color: orange;
+}
+
+h2::after {
+  content: " ✔";
+  color: green;
+}
+
+/* 3. Marcador da lista */
+.lista li::marker {
+  color: red;
+  font-size: 20px;
+}
+
+/* EXTRA: efeito ao passar o mouse */
+.lista li:hover {
+  color: blue;
+}
+
+/* 4. :not() */
+.grupo p:not(.ativo) {
+  color: red;
+}
+
+/* 5. Placeholder */
+input::placeholder {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* 6. Seleção de texto */
+::selection {
+  background-color: yellow;
+  color: green;
+  font-weight: bold;
+}

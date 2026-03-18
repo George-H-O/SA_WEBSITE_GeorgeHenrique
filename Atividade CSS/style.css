@@ -1,0 +1,43 @@
+body{
+background-color:gray ;
+margin:0;
+font-family: Arial;
+}
+
+/* CABEÇALHO */
+
+header{
+background-color:lightgray;
+text-align:center;
+padding:40px;
+}
+
+header h1{
+color:white;
+}
+
+/* AREA VERMELHA */
+
+.area-vermelha{
+background-color:red;
+padding:40px;
+}
+
+/* CAIXAS VERDES */
+
+.caixa-verde{
+background-color:green;
+padding:30px;
+margin-bottom:30px;
+border-radius:8px;
+text-align:center;
+}
+
+/* RODAPÉ */
+
+footer{
+background-color:lightgray;
+text-align:center;
+padding:20px;
+color:white;
+}

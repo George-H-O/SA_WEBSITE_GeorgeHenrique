@@ -1,44 +1,34 @@
 <!doctype html>
-<!-- Define que o documento usa HTML5 -->
-
-<html lang="pt-BR">
-  <!-- Início do HTML e idioma português do Brasil -->
-
-  <meta charset="UTF-8">
-<title>Formulário de Cadastro</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
   <body>
-    <!-- Tudo que aparece na página fica dentro do body -->
+    <h1>Formulários - tipos de input</h1>
 
-    <!-- Formulário principal -->
-    <form>
-      <!-- Agrupa os campos do formulário -->
+    <!-- Input - coleta informações do usuário -->
+    <!-- <input type="text"> -->
+
+    <!-- Tag que engloba os campos do Formulário -->
+    <form action="" method="">
       <fieldset>
-        <!-- Título do grupo de campos -->
-        <legend>Dados de login</legend>
+        <legend> Dados login </legend>
 
-        <!-- Texto que identifica o campo nome -->
-        <label for="caixa-nome">Nome:</label>
-
-        <!-- Campo para digitar o nome -->
+        <label for="">Nome:</label>
         <input
           type="text"
           id="caixa-nome"
           name="caixa-nome"
           placeholder="Digite seu nome completo"
-          required
         />
 
-        <br /><br />
-        <!-- Quebra de linha -->
-
-        <!-- Label envolvendo o input (segunda forma de usar label) -->
-        <label>
-          Email:
-
-          <!-- Campo para digitar email -->
+        <br />
+        <br />
+        <!-- Forms 2 -->
+        <label for=""
+          >Email:
           <input
             type="email"
             name="caixa-email"
@@ -47,21 +37,20 @@
           />
         </label>
 
-        <br /><br />
+        <br />
+        <br />
 
-        <!-- Campo de senha -->
-        <label for="caixa-senha">Senha:</label>
-
+        <label for=""> Senha: </label>
         <input
           type="password"
           name="caixa-senha"
           id="caixa-senha"
-          placeholder="Digite uma senha"
+          placeholder="Digite uma Senha"
         />
 
-        <br /><br />
+        <br />
+        <br />
 
-        <!-- Botão de enviar formulário -->
         <input
           type="submit"
           name="botao-login"
@@ -71,115 +60,17 @@
       </fieldset>
     </form>
 
-    <br /><br />
+    <br>
+    <br>
 
-    <!-- OUTROS TIPOS DE INPUT -->
-
-    <h2>Datas</h2>
-
-    <!-- Campo apenas para data -->
     <label for="input-data">Data</label>
+    <input type="date" name="input-data" id="input-data">
 
-    <input type="date" name="input-data" id="input-data" />
+    <input type="datetime-local" name="" id="">
 
-    <br /><br />
-
-    <!-- Campo para data e hora -->
-    <label>Data e Hora</label>
-
-    <input type="datetime-local" name="data-hora" id="data-hora" />
-
-    <br /><br />
-
-    <!-- Campo apenas para hora -->
-    <label>Hora</label>
-
-    <input type="time" name="hora" id="hora" />
-
-    <br /><br />
+    <input type="time" name="" id="">
 
     <h2>Telefone</h2>
-
-    <!-- Campo para telefone com padrão -->
-    <input
-      type="tel"
-      pattern="[0-9]{2}[0-9]{5}-[0-9]{4}"
-      placeholder="2199999-9999"
-    />
-
-    <br /><br />
-
-    <h2>Números</h2>
-
-    <!-- Campo que aceita apenas números -->
-    <input type="number" min="-50" max="100" value="7" />
-
-    <br /><br />
-
-    <h2>Barra de seleção</h2>
-
-    <!-- Barra deslizante -->
-    0
-    <input type="range" min="0" max="100" value="20" step="5" />
-    100
-
-    <br /><br />
-
-    <h2>Caixa de texto grande</h2>
-
-    <!-- Campo de texto grande -->
-    <textarea placeholder="Biografia..." rows="4" cols="40"></textarea>
-
-    <br /><br />
-
-    <h2>Seletor de Cor</h2>
-
-    <!-- Escolher cor -->
-    <input type="color" />
-
-    <br /><br />
-
-    <h3>Seleção de Curso</h3>
-
-    <!-- Botões de escolha única -->
-    <input type="radio" name="cursoEscolhido" value="TI" /> TI
-    <input type="radio" name="cursoEscolhido" value="Jogos" /> Jogos
-    <input type="radio" name="cursoEscolhido" value="Design" /> Design
-
-    <br /><br />
-
-    <h3>Redes que você utiliza</h3>
-
-    <!-- Caixa de múltipla escolha -->
-    <input type="checkbox" name="rede1" value="TikTok" /> TikTok
-    <input type="checkbox" name="rede2" value="WhatsApp" /> WhatsApp
-    <input type="checkbox" name="rede3" value="UOL" /> UOL bate papo
-
-    <br /><br />
-
-    <h3>Selecione sua cidade</h3>
-
-    <!-- Lista de seleção -->
-    <select name="cidade" id="caixa-cidade">
-      <option value="Rio">Rio de Janeiro</option>
-
-      <option value="Toquio">Tóquio</option>
-
-      <option value="BC">Balneário Camboriú</option>
-
-      <!-- Grupo de opções -->
-      <optgroup label="Espírito Santo">
-        <option value="Cariacica">Cariacica</option>
-        <option value="Carapina">Carapina</option>
-        <option value="Feu Rosa">Feu Rosa</option>
-        <option value="Guarapari">Guarapari</option>
-      </optgroup>
-    </select>
-
-    <br /><br />
-
-    <!-- Botão para limpar formulário -->
-    <input type="reset" value="Resetar" />
+    <input type="tel" pattern="[0-9]{3}--[0-9]{5}--[0-9]{4}" placeholder="{027} 99999-9999">
   </body>
 </html>
-<!-- Final do documento HTML -->

@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(206, 92, 196);
+    color: white;
+    text-align: center;
+}
+
+#bloco{
+    background-color: #000000;
+    display: block;
+}
+
+.quad{
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    text-shadow: 2px 2px #000000;
+    /* float: left; */
+    /* display: inline-block; */
+    /* display: inline; */
+}
+
+#quad1{
+    background-color: red;
+}
+
+#quad2{
+    background-color: #ffd900;
+    /* margin-top: 20px; */
+}
+
+#quad3{
+    background-color: green;
+}
+
+#bloco-linha{
+    background-color: blue;
+}
+
+#linha{
+    background-color: orange;
+}
+
+#flex{
+    background-color: aqua;
+    display: flex;
+    height:500px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row nowrap;
+    
+} 
+
+#quad1{
+    /* Capacidade de aumentar */
+    flex-grow: 1;
+}
+
+#quad2{
+    /* Capacidade de dimunuir */
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
